@@ -32,8 +32,8 @@
                         <nav>
                             <ul class="d-flex list-unstyled my-size">
                                 @foreach ($menu as $item)
-                                    <li class="ps-3">
-                                        <a href="" class="text-decoration-none">
+                                    <li class="ps-4">
+                                        <a href="" class="text-decoration-none text-dark">
                                             {{$item}}
                                         </a>
                                     </li>
@@ -43,7 +43,9 @@
 
                         <!-- Search -->
                         <div class="search my-size text-right">
-                            <input type="search" id="site-search" name="search" placeholder="Search">
+                            <strong>
+                                Search 
+                            </strong>
                         </div>
                     </div>
                 </div>

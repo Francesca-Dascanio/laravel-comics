@@ -5,7 +5,64 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        Footer-top
+                        <div class="footer-top-manager d-flex justify-content-between">
+
+                            {{-- Liste --}}
+                            <div class="lists footer-stuff text-light d-flex justify-content-between my-3">
+                                <div class="list">
+                                    <strong>
+                                        DC COMICS
+                                    </strong>
+                                    <ul class="list-unstyled">
+                                        @foreach ($footerComics as $item)
+                                            <li>
+                                                {{ $item }}
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                    <strong>
+                                        SHOP
+                                    </strong>
+                                    <ul class="list-unstyled">
+                                        @foreach ($footerShop as $item)
+                                            <li>
+                                                {{ $item }}
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                                <div class="list">
+                                    <strong>
+                                        DC
+                                    </strong>
+                                    <ul class="list-unstyled">
+                                        @foreach ($footerDC as $item)
+                                            <li>
+                                                {{ $item }}
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                                <div class="list">
+                                    <strong>
+                                        SITES
+                                    </strong>
+                                    <ul class="list-unstyled">
+                                        @foreach ($footerSites as $item)
+                                            <li>
+                                                {{ $item }}
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div>
+
+                            {{-- Logo Secondo --}}
+                            <div class="second-logo footer-stuff">
+                                {{-- <img src=" {{ Vite::asset('/resources/img/dc-logo-bg.png') }} " alt=""> --}}
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

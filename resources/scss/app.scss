@@ -53,5 +53,16 @@
 
 .background {
     background-image: url('/resources/img/footer-bg.jpg');
-    // background-image: url('../img/footer-bg.jpg');
+    object-fit: cover;
+
+}
+
+.footer-stuff {
+    width: 50%;
+}
+
+.second-logo {
+    background-image: url('/resources/img/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    object-fit: cover;
 }
