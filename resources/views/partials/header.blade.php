@@ -5,10 +5,10 @@
             <div class="row">
                 <div class="col">
                     <div class="d-flex justify-content-end">
-                        <div>
+                        <div class="my-sm-size ">
                             DC Power VISA
                         </div>
-                        <div class="ps-4">
+                        <div class="ps-4 my-sm-size ">
                             ADDITIONAL DC SITE &#9662;
                         </div>
                     </div>
@@ -31,56 +31,13 @@
                         <!-- Nav -->
                         <nav>
                             <ul class="d-flex list-unstyled my-size">
-                                <li class="ps-3">
-                                    <a href="" class="text-decoration-none">
-                                        CHARACTERS
-                                    </a>
-                                </li>
-                                <li class="ps-3">
-                                    <a href="" class="text-decoration-none">
-                                        COMICS
-                                    </a>
-                                </li>
-                                <li class="ps-3">
-                                    <a href="" class="text-decoration-none">
-                                        MOVIES
-                                    </a>
-                                </li>
-                                <li class="ps-3">
-                                    <a href="" class="text-decoration-none">
-                                         TV
-                                    </a>
-                                </li>
-                                <li class="ps-3">
-                                    <a href="" class="text-decoration-none">
-                                        GAMES
-                                    </a>
-                                </li>
-                                <li class="ps-3">
-                                    <a href="" class="text-decoration-none">
-                                        COLLECTIBLES
-                                    </a>
-                                </li>
-                                <li class="ps-3">
-                                    <a href="" class="text-decoration-none">
-                                        VIDEOS
-                                    </a>
-                                </li>
-                                <li class="ps-3">
-                                    <a href="" class="text-decoration-none">
-                                        FANS
-                                    </a>
-                                </li>
-                                <li class="ps-3">
-                                    <a href="" class="text-decoration-none">
-                                        NEWS
-                                    </a>
-                                </li>
-                                <li class="ps-3">
-                                    <a href="" class="text-decoration-none">
-                                        SHOP
-                                    </a>
-                                </li>
+                                @foreach ($menu as $item)
+                                    <li class="ps-3">
+                                        <a href="" class="text-decoration-none">
+                                            {{$item}}
+                                        </a>
+                                    </li>
+                                @endforeach
                             </ul>
                         </nav>
 

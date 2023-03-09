@@ -20,8 +20,16 @@ Route::get('/', function () {
     return view('welcome', [
         'comics' => $comics,
         'menu' => [
-            // Dati menu
-
+            'CHARACTERS',
+            'COMICS',
+            'MOVIES',
+            'TV',
+            'GAMES',
+            'COLLECTIBLES',
+            'VIDEOS',
+            'FANS',
+            'NEWS',
+            'SHOP'
         ],
     ]);
 });
