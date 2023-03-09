@@ -22,7 +22,7 @@ Route::get('/', function () {
         'menu' => [
             // Dati menu
 
-        ]
+        ],
     ]);
 });
 
