@@ -17,7 +17,13 @@ Route::get('/', function () {
 
     $comics = config('comics');
 
-    return view('layouts.main'); $comics;
+    return view('welcome', [
+        'comics' => $comics,
+        'menu' => [
+            // Dati menu
+
+        ]
+    ]);
 });
 
 
