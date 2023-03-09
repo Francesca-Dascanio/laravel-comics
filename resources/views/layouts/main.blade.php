@@ -26,17 +26,13 @@
     </head>
     <body class="antialiased">
 
-            <header>
-                HEADER
-            </header>
+            @include('partials.header')
 
             <main>
-                MAIN 
+                @yield('content')
             </main>
 
-            <footer>
-                FOOTER
-            </footer>
+            @include('partials.footer')
         
     </body>
 </html>
